@@ -20,7 +20,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="gdb 线程调试," />
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-  <title> Hello Hexo // RyanXu's Notes </title>
+  <title> gdb线程调试 // RyanXu's Notes </title>
 </head>
 
 <body>
@@ -91,7 +91,7 @@
         <li class="menu-item menu-item-home">
           <a href="/">
             <i class="menu-item-icon icon-home"></i> <br />
-            首頁
+            Home
           </a>
         </li>
       
@@ -99,7 +99,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives">
             <i class="menu-item-icon icon-archives"></i> <br />
-            歸檔
+            Archives
           </a>
         </li>
       
@@ -107,7 +107,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags">
             <i class="menu-item-icon icon-tags"></i> <br />
-            標籤
+            Tags
           </a>
         </li>
       
@@ -138,7 +138,7 @@
           
           
             
-              Hello Hexo
+              gdb线程调试
             
           
         </h1>
@@ -146,7 +146,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          發表於 2015-06-23
+          Posted on 2015-06-23
         </span>
 
         
@@ -163,12 +163,22 @@
       
 
       
-        <h2 id="This_page_generate_by_Hexo!">This page generate by <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>!</h2><p>&copy; RyanXu</p>
+        <h2 id="gdb_常用线程调试命令：">gdb 常用线程调试命令：</h2><p><code>info threads</code> 显示当前可调试的所有线程，每个线程会有一个GDB为其分配的ID，后面操作线程的时候会用到这个ID。 前面有*的是当前调试的线程。</p>
+<p><code>thread ID</code> 切换当前调试的线程为指定ID的线程。</p>
+<p><code>break thread_test.c:123 thread all</code> 在所有线程中相应的行上设置断点<br><code>thread apply ID1 ID2 command</code> 让一个或者多个线程执行GDB命令command。 </p>
+<p><code>thread apply all command</code> 让所有被调试线程执行GDB命令command。</p>
+<p><code>set scheduler-locking off|on|step</code> 估计是实际使用过多线程调试的人都可以发现，在使用            step或者continue命令调试当前被调试线程的时候，<br>        其他线程也是同时执行的，怎么只让被调试程序执行呢？通过这个命令就可以实现这个需求。off 不锁定任何线程，也就是所有线程都执行，这是默认值。<br>        on 只有当前被调试程序会执行。 step 在单步的时候，除了next过一个函数的情况(熟悉情况的人可能知道，<br>        这其实是一个设置断点然后continue的行为)以外，只有当前线程会执行。</p>
 
       
     </div>
 
     <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/gdb-线程调试/"> #gdb 线程调试 </a>
+          
+        </div>
       
 
       
@@ -224,10 +234,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目錄
+            Table Of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            本站概覽
+            Overview
           </li>
         </ul>
       
@@ -242,21 +252,21 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分類</span>
+              <span class="site-state-item-name">categories</span>
               
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">標籤</span>
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">tags</span>
               </a>
           </div>
 
@@ -279,7 +289,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#This_page_generate_by_Hexo!"><span class="nav-number">1.</span> <span class="nav-text">This page generate by Hexo!</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gdb_常用线程调试命令："><span class="nav-number">1.</span> <span class="nav-text">gdb 常用线程调试命令：</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -305,11 +315,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主題 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
