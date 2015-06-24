@@ -189,7 +189,7 @@
             <span class="post-comments-count">
             &nbsp; | &nbsp;
             <a href="/2015/06/24/hexo写作配置手记/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/24/hexo写作配置手记/"></span>
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/06/24/hexo写作配置手记/"></span>
             </a>
           </span>
           
@@ -203,7 +203,7 @@
       
 
       
-        <h1 id="hexo写作配置手记">hexo写作配置手记</h1><p>在github pages上部署完hexo后开始写文章总发现一些功能不知道怎么弄出来，比如：文章分类、标签、图片灯箱、导航等。<br>而网络上能找到的大部分是关于部署的贴子，很少关于后期写作和优化博客本身的文章，所以我决定自己整理一份手册方便查阅。</p>
+        <p>在github pages上部署完hexo后开始写文章总发现一些功能不知道怎么弄出来，比如：文章分类、标签、图片灯箱、导航等。<br>而网络上能找到的大部分是关于部署的贴子，很少关于后期写作和优化博客本身的文章，所以我决定自己整理一份手册方便查阅。</p>
 <a id="more"></a>  
 <h1 id="基本操作部分">基本操作部分</h1><h2 id="写文章">写文章</h2><p>执行new命令，生成指定名称的文章至<code>hexo\source\_posts\postName.md</code>。</p>
 <pre><code>hexo <span class="keyword">new</span> [layout] <span class="string">"postName"</span> <span class="preprocessor">#新建文章</span>
@@ -452,8 +452,8 @@ description: RyanXu'</span>s blog | c/c++<span class="regexp">/java | shell/pyth
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/06/24/hexo写作配置手记/"
-               data-title="hexo写作配置手记" data-url="http://yoursite.com/2015/06/24/hexo写作配置手记/">
+          <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
         
       </div>
@@ -531,7 +531,7 @@ description: RyanXu'</span>s blog | c/c++<span class="regexp">/java | shell/pyth
             </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.zhihu.com/people/Ryan" target="_blank">ZhiHu</a>
+              <a href="http://www.zhihu.com/people/ryan-xu-82" target="_blank">ZhiHu</a>
             </span>
             
           
@@ -554,7 +554,7 @@ description: RyanXu'</span>s blog | c/c++<span class="regexp">/java | shell/pyth
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo写作配置手记"><span class="nav-number">1.</span> <span class="nav-text">hexo写作配置手记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本操作部分"><span class="nav-number">2.</span> <span class="nav-text">基本操作部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">2.1.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章分类"><span class="nav-number">2.2.</span> <span class="nav-text">文章分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fancybox_效果"><span class="nav-number">2.3.</span> <span class="nav-text">fancybox 效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章描述"><span class="nav-number">2.4.</span> <span class="nav-text">文章描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章摘要"><span class="nav-number">2.5.</span> <span class="nav-text">文章摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义页面"><span class="nav-number">2.6.</span> <span class="nav-text">自定义页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题NexT定制"><span class="nav-number">2.7.</span> <span class="nav-text">主题NexT定制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高级配置部分"><span class="nav-number">3.</span> <span class="nav-text">高级配置部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo目录结构"><span class="nav-number">3.1.</span> <span class="nav-text">hexo目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置文件_config-yml："><span class="nav-number">3.2.</span> <span class="nav-text">站点配置文件_config.yml：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本操作部分"><span class="nav-number">1.</span> <span class="nav-text">基本操作部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">1.1.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章分类"><span class="nav-number">1.2.</span> <span class="nav-text">文章分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fancybox_效果"><span class="nav-number">1.3.</span> <span class="nav-text">fancybox 效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章描述"><span class="nav-number">1.4.</span> <span class="nav-text">文章描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章摘要"><span class="nav-number">1.5.</span> <span class="nav-text">文章摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义页面"><span class="nav-number">1.6.</span> <span class="nav-text">自定义页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题NexT定制"><span class="nav-number">1.7.</span> <span class="nav-text">主题NexT定制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高级配置部分"><span class="nav-number">2.</span> <span class="nav-text">高级配置部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo目录结构"><span class="nav-number">2.1.</span> <span class="nav-text">hexo目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置文件_config-yml："><span class="nav-number">2.2.</span> <span class="nav-text">站点配置文件_config.yml：</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -773,24 +773,32 @@ description: RyanXu'</span>s blog | c/c++<span class="regexp">/java | shell/pyth
 
   
   
-
-  
-    
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"notes-iissnan"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
   
+
+    <script type="text/javascript">
+      var disqus_shortname = 'ryanxu';
+      var disqus_identifier = '2015/06/24/hexo写作配置手记/';
+      var disqus_title = 'hexo写作配置手记';
+      var disqus_url = 'http://yoursite.com/2015/06/24/hexo写作配置手记/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
 
 
   

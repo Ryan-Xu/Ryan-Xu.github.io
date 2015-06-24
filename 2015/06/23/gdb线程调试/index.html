@@ -178,7 +178,7 @@
             <span class="post-comments-count">
             &nbsp; | &nbsp;
             <a href="/2015/06/23/gdb线程调试/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/23/gdb线程调试/"></span>
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/06/23/gdb线程调试/"></span>
             </a>
           </span>
           
@@ -238,8 +238,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/06/23/gdb线程调试/"
-               data-title="gdb线程调试" data-url="http://yoursite.com/2015/06/23/gdb线程调试/">
+          <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
         
       </div>
@@ -317,7 +317,7 @@
             </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.zhihu.com/people/Ryan" target="_blank">ZhiHu</a>
+              <a href="http://www.zhihu.com/people/ryan-xu-82" target="_blank">ZhiHu</a>
             </span>
             
           
@@ -559,24 +559,32 @@
 
   
   
-
-  
-    
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"notes-iissnan"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
   
+
+    <script type="text/javascript">
+      var disqus_shortname = 'ryanxu';
+      var disqus_identifier = '2015/06/23/gdb线程调试/';
+      var disqus_title = 'gdb线程调试';
+      var disqus_url = 'http://yoursite.com/2015/06/23/gdb线程调试/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
 
 
   
