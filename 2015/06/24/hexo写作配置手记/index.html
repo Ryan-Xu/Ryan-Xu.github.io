@@ -1,0 +1,800 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  <meta name="google-site-verification" content="VvyjvVXcJQa0QklHipu6pwm2PJGnnchIqX7s5JbbT_0" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+    <meta name="description" content="RyanXu blog" />
+
+
+
+  <meta name="keywords" content="hexo 使用 方法," />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      google: ''
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?50c15455e37f70aea674ff4a663eef27";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <title> hexo写作配置手记 // RyanXu's blog </title>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">RyanXu's blog</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            <i class="menu-item-icon icon-categories"></i> <br />
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            Tags
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              hexo写作配置手记
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on 2015-06-24
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <a href="/categories/工作随笔/">工作随笔</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/06/24/hexo写作配置手记/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/24/hexo写作配置手记/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <h1 id="hexo写作配置手记">hexo写作配置手记</h1><p>在github pages上部署完hexo后开始写文章总发现一些功能不知道怎么弄出来，比如：文章分类、标签、图片灯箱、导航等。<br>而网络上能找到的大部分是关于部署的贴子，很少关于后期写作和优化博客本身的文章，所以我决定自己整理一份手册方便查阅。</p>
+<a id="more"></a>  
+<h1 id="基本操作部分">基本操作部分</h1><h2 id="写文章">写文章</h2><p>执行new命令，生成指定名称的文章至<code>hexo\source\_posts\postName.md</code>。</p>
+<pre><code>hexo <span class="keyword">new</span> [layout] <span class="string">"postName"</span> <span class="preprocessor">#新建文章</span>
+</code></pre><ul>
+<li><p>其中<strong>layout</strong>是可选参数，默认值为post。layout对应scaffolds目录下文件，这些文件名称就是layout名称。当然你可以添加自己的layout，方法就是添加一个文件即可，同时你也可以编辑现有的layout，比如post的layout默认是<code>hexo\scaffolds\post.md</code>。</p>
+<pre><code>title: { { title } }
+date: { { date } }
+<span class="header">tags:
+---</span>
+</code></pre></li>
+</ul>
+<p>请注意，大括号与大括号之间我多加了个空格，否则会被转义，不能正常显示。</p>
+<ul>
+<li><strong>postName</strong>是md文件的名字，同时也出现在你文章的URL中，postName如果包含空格，必须用”将其包围，postName可以为中文。</li>
+</ul>
+<p>注意，所有文件：后面都必须有个空格，不然会报错。</p>
+<h2 id="文章分类">文章分类</h2><p>可以在*.md文件头加入categories: 标签来给文章分类。<br>我想添加categories，以免每次手工输入，只需要修改这个文件添加一行，如下：</p>
+<pre><code>title: { { title } }
+date: { { date } }
+categories: 
+<span class="header">tags: 
+---</span>
+</code></pre><p>看一下刚才生成的文件hexo\source_posts\postName.md，内容如下：</p>
+<pre><code><span class="label">title:</span> postName <span class="preprocessor">#文章页面上的显示名称，可以任意修改，不会出现在URL中</span>
+<span class="label">date:</span> <span class="number">2013</span>-<span class="number">12</span>-<span class="number">02</span> <span class="number">15</span>:<span class="number">30</span>:<span class="number">16</span> <span class="preprocessor">#文章生成时间，一般不改，当然也可以任意修改</span>
+<span class="label">categories:</span> <span class="preprocessor">#文章分类目录，可以为空，注意:后面有个空格</span>
+<span class="label">tags:</span> <span class="preprocessor">#文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</span>
+---
+这里开始使用markdown格式输入你的正文。
+</code></pre><p>接下来，你就可以用喜爱的编辑器尽情书写你的文章。关于markdown语法，可以参考我的文章Markdown简明语法。</p>
+<h2 id="fancybox_效果">fancybox 效果</h2><p>如果想在照片展示页面有fancybox效果，只需要在你的文章*.md文件的头上添加photos项即可，然后一行行添加你要展示的照片：</p>
+<pre><code><span class="string">layout:</span> photo
+<span class="string">title:</span> 我的阅历
+<span class="string">date:</span> <span class="number">2085</span>-<span class="number">01</span>-<span class="number">16</span> <span class="number">07</span>:<span class="number">33</span>:<span class="number">44</span>
+<span class="string">tags:</span> [hexo]
+<span class="string">photos:</span>
+- <span class="string">http:</span><span class="comment">//ryan-xu.github.io/2013/11/27/images/photos-0.jpg</span>
+- <span class="string">http:</span><span class="comment">//ryan-xu.github.io/2013/11/27/images/photos-1.jpg</span>
+</code></pre><p>文件头上的layout: photo可以省略。</p>
+<p>不想每次都手动添加怎么办？同样的，打开您的hexo\scaffolds\photo.md</p>
+<pre><code>layout: { { layout } }
+title: { { title } }
+date: { { date } }
+tags: 
+photos: 
+<span class="header">- 
+---</span>
+</code></pre><p>然后每次可以执行带layout的new命令生成照片文章：</p>
+<pre><code>hexo <span class="keyword">new</span> photo <span class="string">"photoPostName"</span> <span class="preprocessor">#新建照片文章</span>
+description
+</code></pre><h2 id="文章描述">文章描述</h2><p>markdown文件头中也可以添加description，以覆盖全局配置文件中的description内容，请参考下文_config.yml的介绍。</p>
+<pre><code>title: hexo你的博客
+date: 2013-11-22 17:11:54
+categories: default
+tags: [hexo]
+<span class="header">description: 你对本页的描述
+---</span>
+</code></pre><p>hexo默认会处理全部markdown和html文件，如果不想让hexo处理你的文件，可以在文件头中加入layout: false。</p>
+<h2 id="文章摘要">文章摘要</h2><p>在需要显示摘要的地方添加如下代码即可：</p>
+<pre><code>以上是摘要  
+<span class="comment">&lt;!--more--&gt;</span>  
+以下是余下全文
+</code></pre><p>more以上内容即是文章摘要，在主页显示，more以下内容点击『&gt; Read More』链接打开全文才显示。</p>
+<p>hexo中所有文件的编码格式均是UTF-8。</p>
+<h2 id="自定义页面">自定义页面</h2><p>执行new page命令</p>
+<pre><code>hexo <span class="keyword">new</span> page <span class="string">"about"</span>
+</code></pre><p>在hexo\source\下会生成about目录，里面有个index.md，直接编辑就可以了，然后在主题的_config.yml中将其配置显示出来。<br>上述步骤，也可以手工生成，在hexo\source\下手工新建about和index.md也是完全等价的。</p>
+<p>因为markdown对table的支持不好，我是在about中直接建立index.html，里面书写页面内容，hexo会帮你加上头和尾。</p>
+<h2 id="主题NexT定制">主题<strong>NexT</strong>定制</h2><p>因为本人使用的主题是<strong><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a></strong>,所以就已<strong>NexT</strong>配置说明。</p>
+<ul>
+<li>创建<strong>分类</strong>页面，并在菜单中显示页面链接。</li>
+</ul>
+<p>新建一个页面，命名为 categories 。命令如下：</p>
+<pre><code>hexo <span class="keyword">new</span> page categories
+</code></pre><p>编辑刚新建的页面，将页面的类型设置为 categories ，主题将自动为这个页面显示所有分类。</p>
+<pre><code>title: 分类
+date: 2014-12-22 12:39:04
+<span class="header">type: "categories"
+---</span>
+</code></pre><p>在菜单中添加链接。编辑主题的 _config.yml ，将 menu 中的 categories: /categories 注释去掉，如下:</p>
+<pre><code><span class="attribute">menu</span>:
+  <span class="attribute">home</span>: /
+  <span class="attribute">categories</span>: /categories
+  <span class="attribute">archives</span>: /archives
+  <span class="attribute">tags</span>: /tags
+</code></pre><ul>
+<li>创建<strong>标签云</strong>页面，并在菜单中显示页面链接。</li>
+</ul>
+<p>新建一个页面，命名为 tags 。命令如下：</p>
+<pre><code>hexo <span class="keyword">new</span> page <span class="string">"tags"</span>
+</code></pre><p>编辑刚新建的页面，将页面的类型设置为 tags ，主题将自动为这个页面显示标签云。</p>
+<pre><code>title: All tags
+date: 2014-12-22 12:39:04
+<span class="header">type: "tags"
+---</span>
+</code></pre><p>在菜单中添加链接。编辑主题的 _config.yml ，添加 tags 到 menu 中，如下:</p>
+<pre><code><span class="attribute">menu</span>:
+  <span class="attribute">home</span>: /
+  <span class="attribute">archives</span>: /archives
+  <span class="attribute">tags</span>: /tags
+</code></pre><ul>
+<li>创建<strong>关于我</strong>页面</li>
+</ul>
+<p>新建一个 about 页面：</p>
+<pre><code>hexo <span class="keyword">new</span> page <span class="string">"about"</span>
+</code></pre><p>菜单显示 about 链接，在主题的 _configy.yml 设置中将 menu 中 about 前面的注释去掉即可。</p>
+<pre><code><span class="attribute">menu</span>:
+  <span class="attribute">home</span>: /
+  <span class="attribute">archives</span>: /archives
+  <span class="attribute">tags</span>: /tags
+  <span class="attribute">about</span>: /about
+</code></pre><h1 id="高级配置部分">高级配置部分</h1><h2 id="hexo目录结构">hexo目录结构</h2><p>默认目录结构：</p>
+<pre><code>.
+├── .deploy
+├── <span class="keyword">public</span>
+├── scaffolds
+├── scripts
+├── <span class="keyword">source</span>
+|   ├── _drafts
+|   └── _posts
+├── themes
+├── _config.yml
+└── <span class="keyword">package</span>.json
+</code></pre><p>.deploy：执行hexo deploy命令部署到GitHub上的内容目录<br>public：执行hexo generate命令，输出的静态网页内容目录<br>scaffolds：layout模板文件目录，其中的md文件可以添加编辑<br>scripts：扩展脚本目录，这里可以自定义一些javascript脚本<br>source：文章源码目录，该目录下的markdown和html文件均会被hexo处理。该页面对应repo的根目录，404文件、favicon.ico文件，CNAME文件等都应该放这里，该目录下可新建页面目录。<br>_drafts：草稿文章<br>_posts：发布文章<br>themes：主题文件目录<br>_config.yml：全局配置文件，大多数的设置都在这里<br>package.json：应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮</p>
+<h2 id="站点配置文件_config-yml：">站点配置文件_config.yml：</h2><pre><code><span class="comment"># Hexo Configuration                                                                                  </span>
+<span class="comment">## Docs: http://zespia.tw/hexo/docs/configure.html                                                    </span>
+<span class="comment">## Source: https://github.com/tommy351/hexo/                                                          </span>
+
+<span class="comment"># Site #整站的基本信息                                                                                       </span>
+<span class="symbol">title:</span> <span class="constant">RyanXu</span><span class="string">'s blog #网站标题                                                                                       
+subtitle:  #网站副标题                                                                        
+description: RyanXu'</span>s blog | c/c++<span class="regexp">/java | shell/python</span> | bi <span class="comment">#网站描述，给搜索引擎用的，在生成html中的head-&gt;meta中可看到               </span>
+<span class="symbol">author:</span> <span class="constant">Ryan</span> <span class="comment">#网站作者，在下方显示                                                                             </span>
+<span class="symbol">email:</span>  <span class="comment">#联系邮箱                                                                             </span>
+<span class="symbol">language:</span> zh-<span class="constant">CN</span> <span class="comment">#语言                                                                                   </span>
+
+<span class="comment"># URL #域名和文件结构                                                                                        </span>
+<span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span>
+<span class="symbol">url:</span>  <span class="comment">#你的域名                                                                         </span>
+<span class="symbol">root:</span> /                                                                                               
+<span class="symbol">permalink:</span> <span class="symbol">:year/</span><span class="symbol">:month/</span><span class="symbol">:day/</span><span class="symbol">:title/</span>                                                                  
+<span class="symbol">tag_dir:</span> tags                                                                                         
+<span class="symbol">archive_dir:</span> archives                                                                                 
+<span class="symbol">category_dir:</span> categories                                                                              
+<span class="symbol">code_dir:</span> downloads/code                                                                              
+
+<span class="comment"># Writing #写文章选项                                                                                      </span>
+<span class="symbol">new_post_name:</span> <span class="symbol">:title</span>.md <span class="comment"># File name of new posts                                                     </span>
+<span class="symbol">default_layout:</span> post <span class="comment">#默认layout方式                                                                      </span>
+<span class="symbol">auto_spacing:</span> <span class="keyword">false</span> <span class="comment"># Add spaces between asian characters and western characters                      </span>
+<span class="symbol">titlecase:</span> <span class="keyword">false</span> <span class="comment"># Transform title into titlecase                                                     </span>
+<span class="symbol">external_link:</span> <span class="keyword">true</span> <span class="comment"># Open external links in new tab                                                  </span>
+<span class="symbol">max_open_file:</span> <span class="number">100</span>                                                                                    
+<span class="symbol">multi_thread:</span> <span class="keyword">true</span>                                                                                    
+<span class="symbol">filename_case:</span> <span class="number">0</span>                                                                                      
+<span class="symbol">render_drafts:</span> <span class="keyword">false</span>                                                                                  
+<span class="symbol">highlight:</span> <span class="comment">#代码高亮                                                                                      </span>
+  <span class="symbol">enable:</span> <span class="keyword">true</span> <span class="comment">#是否启用                                                                                  </span>
+  <span class="symbol">line_number:</span> <span class="keyword">false</span> <span class="comment">#是否显示行号                                                                          </span>
+  <span class="symbol">tab_replace:</span>                                                                                        
+
+<span class="comment"># Category &amp; Tag #分类与标签                                                                               </span>
+<span class="symbol">default_category:</span> uncategorized <span class="comment"># default                                                             </span>
+<span class="symbol">category_map:</span>                                                                                         
+<span class="symbol">tag_map:</span>                                                                                              
+
+<span class="comment"># Archives #存档，这里的说明好像不对。全部选择1，这个选项与主题中的选项有时候会有冲突                                                     </span>
+<span class="comment">## 2: Enable pagination                                                                               </span>
+<span class="comment">## 1: Disable pagination                                                                              </span>
+<span class="comment">## 0: Fully Disable                                                                                   </span>
+<span class="symbol">archive:</span> <span class="number">1</span>                                                                                            
+<span class="symbol">category:</span> <span class="number">1</span>                                                                                           
+<span class="symbol">tag:</span> <span class="number">1</span>                                                                                                
+
+<span class="comment"># Server #本地服务参数                                                                                      </span>
+<span class="comment">## Hexo uses Connect as a server                                                                      </span>
+<span class="comment">## You can customize the logger format as defined in                                                  </span>
+<span class="comment">## http://www.senchalabs.org/connect/logger.html                                                      </span>
+<span class="symbol">port:</span> <span class="number">4000</span>                                                                                            
+<span class="symbol">logger:</span> <span class="keyword">true</span>                                                                                          
+<span class="symbol">logger_format:</span>                                                                                        
+
+<span class="comment"># Date / Time format #日期显示格式                                                                          </span>
+<span class="comment">## Hexo uses Moment.js to parse and display date                                                      </span>
+<span class="comment">## You can customize the date format as defined in                                                    </span>
+<span class="comment">## http://momentjs.com/docs/#/displaying/format/                                                      </span>
+<span class="symbol">date_format:</span> <span class="constant">MMM</span> <span class="constant">D</span> <span class="constant">YYYY</span>                                                                               
+<span class="symbol">time_format:</span> <span class="constant">H</span><span class="symbol">:mm</span><span class="symbol">:ss</span>                                                                                  
+
+<span class="comment"># Pagination #分页设置                                                                                    </span>
+<span class="comment">## Set per_page to 0 to disable pagination                                                            </span>
+<span class="symbol">per_page:</span> <span class="number">10</span> <span class="comment">#每页10篇文章                                                                                 </span>
+<span class="symbol">pagination_dir:</span> page                                                                                  
+
+<span class="comment"># Disqus #社会化评论disqus，我使用多说，在主题中配置                                                                    </span>
+<span class="symbol">disqus_shortname:</span>                                                                                     
+
+<span class="comment"># Extensions #插件，暂时未安装插件                                                                              </span>
+<span class="comment">## Plugins: https://github.com/tommy351/hexo/wiki/Plugins                                             </span>
+<span class="comment">## Themes: https://github.com/tommy351/hexo/wiki/Themes                                               </span>
+<span class="comment">## 主题                                                                                                 </span>
+<span class="symbol">theme:</span> modernist <span class="comment"># raytaylorism # pacman # modernist # light                                          </span>
+<span class="symbol">exclude_generator:</span>                                                                                    
+
+<span class="comment"># Deployment #部署                                                                                      </span>
+<span class="comment">## Docs: http://zespia.tw/hexo/docs/deploy.html                                                       </span>
+<span class="symbol">deploy:</span>                                                                                               
+  <span class="symbol">type:</span> github                                                                                        
+  <span class="symbol">repository:</span> git<span class="variable">@github</span>.<span class="symbol">com:</span>bruce-sha/bruce-sha.github.com.git <span class="comment">#你的GitHub Pages仓库   </span>
+</code></pre>
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo-使用-方法/"> #hexo 使用 方法 </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/06/23/gdb线程调试/">gdb线程调试</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="2015/06/24/hexo写作配置手记/"
+               data-title="hexo写作配置手记" data-url="http://yoursite.com/2015/06/24/hexo写作配置手记/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460" alt="Ryan Xu" />
+          <p class="site-author-name">Ryan Xu</p>
+        </div>
+        <p class="site-description motion-element">RyanXu blog</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">categories</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/Ryan-Xu" target="_blank">GitHub</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/Ryan" target="_blank">ZhiHu</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo写作配置手记"><span class="nav-number">1.</span> <span class="nav-text">hexo写作配置手记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本操作部分"><span class="nav-number">2.</span> <span class="nav-text">基本操作部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">2.1.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章分类"><span class="nav-number">2.2.</span> <span class="nav-text">文章分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fancybox_效果"><span class="nav-number">2.3.</span> <span class="nav-text">fancybox 效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章描述"><span class="nav-number">2.4.</span> <span class="nav-text">文章描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章摘要"><span class="nav-number">2.5.</span> <span class="nav-text">文章摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义页面"><span class="nav-number">2.6.</span> <span class="nav-text">自定义页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题NexT定制"><span class="nav-number">2.7.</span> <span class="nav-text">主题NexT定制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高级配置部分"><span class="nav-number">3.</span> <span class="nav-text">高级配置部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo目录结构"><span class="nav-number">3.1.</span> <span class="nav-text">hexo目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置文件_config-yml："><span class="nav-number">3.2.</span> <span class="nav-text">站点配置文件_config.yml：</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Ryan Xu</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"notes-iissnan"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+
+
+  
+  
+
+</body>
+</html>
